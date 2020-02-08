@@ -1,0 +1,5 @@
+tdview/
+projects/*
+
+!projects/tdview.vcxproj
+!projects/tdview.vcxproj.filters
