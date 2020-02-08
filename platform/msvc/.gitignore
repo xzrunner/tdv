@@ -1,5 +1,5 @@
-tdview/
+tdv/
 projects/*
 
-!projects/tdview.vcxproj
-!projects/tdview.vcxproj.filters
+!projects/tdv.vcxproj
+!projects/tdv.vcxproj.filters

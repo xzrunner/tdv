@@ -1,5 +1,5 @@
-#include "tdview/PinCallback.h"
-#include "tdview/PinType.h"
+#include "tdv/PinCallback.h"
+#include "tdv/PinType.h"
 
 #include <painting0/Color.h>
 #include <blueprint/Pin.h>

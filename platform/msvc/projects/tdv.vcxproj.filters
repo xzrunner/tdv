@@ -36,61 +36,61 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\include\tdview\PinType.h">
+    <ClInclude Include="..\..\..\include\tdv\PinType.h">
       <Filter>dataset\pin</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\PinCallback.h">
+    <ClInclude Include="..\..\..\include\tdv\PinCallback.h">
       <Filter>dataset\pin</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\Node.h">
+    <ClInclude Include="..\..\..\include\tdv\Node.h">
       <Filter>dataset\node</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\node_def_gen.h">
+    <ClInclude Include="..\..\..\include\tdv\node_def_gen.h">
       <Filter>tools\rtti</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\node_regist_cfg.h">
+    <ClInclude Include="..\..\..\include\tdv\node_regist_cfg.h">
       <Filter>tools\rtti</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\node_rttr_gen.h">
+    <ClInclude Include="..\..\..\include\tdv\node_rttr_gen.h">
       <Filter>tools\rtti</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\RegistNodes.h">
+    <ClInclude Include="..\..\..\include\tdv\RegistNodes.h">
       <Filter>tools\rtti</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\WxGraphPage.h">
+    <ClInclude Include="..\..\..\include\tdv\WxGraphPage.h">
       <Filter>view\editor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\WxToolbarPanel.h">
+    <ClInclude Include="..\..\..\include\tdv\WxToolbarPanel.h">
       <Filter>view\toolbar</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\PreviewPage.h">
+    <ClInclude Include="..\..\..\include\tdv\PreviewPage.h">
       <Filter>view\preview</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\WxPreviewCanvas.h">
+    <ClInclude Include="..\..\..\include\tdv\WxPreviewCanvas.h">
       <Filter>view\preview</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\Evaluator.h">
+    <ClInclude Include="..\..\..\include\tdv\Evaluator.h">
       <Filter>tools\eval</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\PreviewRender.h">
+    <ClInclude Include="..\..\..\include\tdv\PreviewRender.h">
       <Filter>view\preview</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\PreviewBuilder.h">
+    <ClInclude Include="..\..\..\include\tdv\PreviewBuilder.h">
       <Filter>tools\eval</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\TdAdapter.h">
+    <ClInclude Include="..\..\..\include\tdv\TdAdapter.h">
       <Filter>tools\trans</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\TdView.h" />
-    <ClInclude Include="..\..\..\include\tdview\NodePreview.h">
+    <ClInclude Include="..\..\..\include\tdv\NodePreview.h">
       <Filter>dataset\node</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\Blackboard.h">
+    <ClInclude Include="..\..\..\include\tdv\Blackboard.h">
       <Filter>tools</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\tdview\GraphEditOP.h">
+    <ClInclude Include="..\..\..\include\tdv\GraphEditOP.h">
       <Filter>view\editor</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\tdv\TDV.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\PinCallback.cpp">
@@ -129,7 +129,6 @@
     <ClCompile Include="..\..\..\source\TdAdapter.cpp">
       <Filter>tools\trans</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\source\TdView.cpp" />
     <ClCompile Include="..\..\..\source\NodePreview.cpp">
       <Filter>dataset\node</Filter>
     </ClCompile>
@@ -139,5 +138,6 @@
     <ClCompile Include="..\..\..\source\GraphEditOP.cpp">
       <Filter>view\editor</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\TDV.cpp" />
   </ItemGroup>
 </Project>

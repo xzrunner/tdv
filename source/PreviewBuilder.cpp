@@ -1,4 +1,4 @@
-#include "tdview/PreviewBuilder.h"
+#include "tdv/PreviewBuilder.h"
 
 #include <ee0/SubjectMgr.h>
 #include <ee0/MessageID.h>

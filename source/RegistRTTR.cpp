@@ -1,4 +1,4 @@
-#include "tdview/RegistNodes.h"
+#include "tdv/RegistNodes.h"
 
 #include <ee0/ReflectPropTypes.h>
 

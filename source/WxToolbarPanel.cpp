@@ -1,4 +1,4 @@
-#include "tdview/WxToolbarPanel.h"
+#include "tdv/WxToolbarPanel.h"
 
 #include <ee0/SubjectMgr.h>
 #include <ee0/GameObj.h>

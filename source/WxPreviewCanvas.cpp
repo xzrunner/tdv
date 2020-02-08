@@ -1,8 +1,8 @@
-#include "tdview/WxPreviewCanvas.h"
-#include "tdview/PreviewPage.h"
-#include "tdview/Node.h"
-#include "tdview/WxGraphPage.h"
-#include "tdview/PreviewRender.h"
+#include "tdv/WxPreviewCanvas.h"
+#include "tdv/PreviewPage.h"
+#include "tdv/Node.h"
+#include "tdv/WxGraphPage.h"
+#include "tdv/PreviewRender.h"
 
 #include <ee0/WxStagePage.h>
 #include <ee0/SubjectMgr.h>

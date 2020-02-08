@@ -1,4 +1,4 @@
-#include "tdview/PreviewPage.h"
+#include "tdv/PreviewPage.h"
 
 #include <ee0/WxStagePage.h>
 #include <ee3/WxStageCanvas.h>

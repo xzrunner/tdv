@@ -1,22 +1,22 @@
-#include "tdview/TdView.h"
-#include "tdview/PinCallback.h"
-#include "tdview/Node.h"
+#include "tdv/TDV.h"
+#include "tdv/PinCallback.h"
+#include "tdv/Node.h"
 
 #include <blueprint/NodeBuilder.h>
 #include <blueprint/node/Commentary.h>
 
-#include <td/Gh.h>
+#include <td/TD.h>
 
 namespace tdv
 {
 
-CU_SINGLETON_DEFINITION(TdView);
+CU_SINGLETON_DEFINITION(TDV);
 
 extern void regist_rttr();
 
-TdView::TdView()
+TDV::TDV()
 {
-	td::GH::Instance();
+	td::TD::Instance();
 
 	regist_rttr();
 
@@ -25,7 +25,7 @@ TdView::TdView()
     InitPinCallback();
 }
 
-void TdView::InitNodes()
+void TDV::InitNodes()
 {
     const int bp_count = 1;
 

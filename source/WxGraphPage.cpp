@@ -1,6 +1,6 @@
-#include "tdview/WxGraphPage.h"
-#include "tdview/Evaluator.h"
-#include "tdview/Blackboard.h"
+#include "tdv/WxGraphPage.h"
+#include "tdv/Evaluator.h"
+#include "tdv/Blackboard.h"
 
 #include <ee0/SubjectMgr.h>
 #include <blueprint/MessageID.h>

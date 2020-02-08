@@ -11,25 +11,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\include\tdview\Blackboard.h" />
-    <ClInclude Include="..\..\..\include\tdview\Evaluator.h" />
-    <ClInclude Include="..\..\..\include\tdview\GraphEditOP.h" />
-    <ClInclude Include="..\..\..\include\tdview\NodePreview.h" />
-    <ClInclude Include="..\..\..\include\tdview\TdAdapter.h" />
-    <ClInclude Include="..\..\..\include\tdview\TdView.h" />
-    <ClInclude Include="..\..\..\include\tdview\Node.h" />
-    <ClInclude Include="..\..\..\include\tdview\node_def_gen.h" />
-    <ClInclude Include="..\..\..\include\tdview\node_regist_cfg.h" />
-    <ClInclude Include="..\..\..\include\tdview\node_rttr_gen.h" />
-    <ClInclude Include="..\..\..\include\tdview\PinCallback.h" />
-    <ClInclude Include="..\..\..\include\tdview\PinType.h" />
-    <ClInclude Include="..\..\..\include\tdview\PreviewBuilder.h" />
-    <ClInclude Include="..\..\..\include\tdview\PreviewPage.h" />
-    <ClInclude Include="..\..\..\include\tdview\PreviewRender.h" />
-    <ClInclude Include="..\..\..\include\tdview\RegistNodes.h" />
-    <ClInclude Include="..\..\..\include\tdview\WxGraphPage.h" />
-    <ClInclude Include="..\..\..\include\tdview\WxPreviewCanvas.h" />
-    <ClInclude Include="..\..\..\include\tdview\WxToolbarPanel.h" />
+    <ClInclude Include="..\..\..\include\tdv\Blackboard.h" />
+    <ClInclude Include="..\..\..\include\tdv\Evaluator.h" />
+    <ClInclude Include="..\..\..\include\tdv\GraphEditOP.h" />
+    <ClInclude Include="..\..\..\include\tdv\NodePreview.h" />
+    <ClInclude Include="..\..\..\include\tdv\TdAdapter.h" />
+    <ClInclude Include="..\..\..\include\tdv\TDV.h" />
+    <ClInclude Include="..\..\..\include\tdv\Node.h" />
+    <ClInclude Include="..\..\..\include\tdv\node_def_gen.h" />
+    <ClInclude Include="..\..\..\include\tdv\node_regist_cfg.h" />
+    <ClInclude Include="..\..\..\include\tdv\node_rttr_gen.h" />
+    <ClInclude Include="..\..\..\include\tdv\PinCallback.h" />
+    <ClInclude Include="..\..\..\include\tdv\PinType.h" />
+    <ClInclude Include="..\..\..\include\tdv\PreviewBuilder.h" />
+    <ClInclude Include="..\..\..\include\tdv\PreviewPage.h" />
+    <ClInclude Include="..\..\..\include\tdv\PreviewRender.h" />
+    <ClInclude Include="..\..\..\include\tdv\RegistNodes.h" />
+    <ClInclude Include="..\..\..\include\tdv\WxGraphPage.h" />
+    <ClInclude Include="..\..\..\include\tdv\WxPreviewCanvas.h" />
+    <ClInclude Include="..\..\..\include\tdv\WxToolbarPanel.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\Blackboard.cpp" />
@@ -37,7 +37,7 @@
     <ClCompile Include="..\..\..\source\GraphEditOP.cpp" />
     <ClCompile Include="..\..\..\source\NodePreview.cpp" />
     <ClCompile Include="..\..\..\source\TdAdapter.cpp" />
-    <ClCompile Include="..\..\..\source\TdView.cpp" />
+    <ClCompile Include="..\..\..\source\TDV.cpp" />
     <ClCompile Include="..\..\..\source\Node.cpp" />
     <ClCompile Include="..\..\..\source\PinCallback.cpp" />
     <ClCompile Include="..\..\..\source\PreviewBuilder.cpp" />
@@ -50,9 +50,9 @@
     <ClCompile Include="..\..\..\source\WxToolbarPanel.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>7.tdview</ProjectName>
+    <ProjectName>7.tdv</ProjectName>
     <ProjectGuid>{A93520DD-E56E-431C-BDA7-FC222F3DAC65}</ProjectGuid>
-    <RootNamespace>tdview</RootNamespace>
+    <RootNamespace>tdv</RootNamespace>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -82,12 +82,12 @@
     <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\tdview\x86\Debug\</OutDir>
-    <IntDir>..\tdview\x86\Debug\obj\</IntDir>
+    <OutDir>..\tdv\x86\Debug\</OutDir>
+    <IntDir>..\tdv\x86\Debug\obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\tdview\x86\Release\</OutDir>
-    <IntDir>..\tdview\x86\Release\obj\</IntDir>
+    <OutDir>..\tdv\x86\Release\</OutDir>
+    <IntDir>..\tdv\x86\Release\obj\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

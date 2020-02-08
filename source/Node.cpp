@@ -1,6 +1,6 @@
-#include "tdview/Node.h"
-#include "tdview/TdAdapter.h"
-#include "tdview/Blackboard.h"
+#include "tdv/Node.h"
+#include "tdv/TdAdapter.h"
+#include "tdv/Blackboard.h"
 
 #include <blueprint/Pin.h>
 #include <blueprint/Connecting.h>

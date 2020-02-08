@@ -1,5 +1,5 @@
-#include "tdview/GraphEditOP.h"
-#include "tdview/Node.h"
+#include "tdv/GraphEditOP.h"
+#include "tdv/Node.h"
 
 #include <ee0/CameraHelper.h>
 #include <ee0/WxStagePage.h>

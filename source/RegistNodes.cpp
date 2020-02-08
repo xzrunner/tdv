@@ -1,4 +1,4 @@
-#include "tdview/RegistNodes.h"
+#include "tdv/RegistNodes.h"
 
 #include <ee0/ReflectPropTypes.h>
 
@@ -16,8 +16,8 @@ rttr::registration::class_<tdv::Node>("tdv::node")
 )
 ;
 
-#define EXE_FILEPATH "tdview/node_rttr_gen.h"
-#include "tdview/node_regist_cfg.h"
+#define EXE_FILEPATH "tdv/node_rttr_gen.h"
+#include "tdv/node_regist_cfg.h"
 #undef EXE_FILEPATH
 
 }

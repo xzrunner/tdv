@@ -10,7 +10,7 @@
 namespace tdv
 {
 
-class TdView
+class TDV
 {
 public:
     auto& GetAllNodes() { return m_nodes; }
@@ -21,8 +21,8 @@ private:
 private:
     std::vector<bp::NodePtr> m_nodes;
 
-    CU_SINGLETON_DECLARATION(TdView)
+    CU_SINGLETON_DECLARATION(TDV)
 
-}; // TdView
+}; // TDV
 
 }

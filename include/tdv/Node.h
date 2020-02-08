@@ -1,6 +1,6 @@
 #pragma once
 
-#include "tdview/NodePreview.h"
+#include "tdv/NodePreview.h"
 
 #include <blueprint/Node.h>
 

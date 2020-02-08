@@ -1,5 +1,5 @@
-#include "tdview/PreviewRender.h"
-#include "tdview/Evaluator.h"
+#include "tdv/PreviewRender.h"
+#include "tdv/Evaluator.h"
 
 #include <painting3/RenderSystem.h>
 #include <node0/SceneNode.h>
