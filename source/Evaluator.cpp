@@ -20,7 +20,7 @@ void Evaluator::OnAddNode(const bp::Node& front, const n0::SceneNodePtr& snode, 
         return;
     }
 
-    m_eval.AddComponent(back);
+    m_eval.AddNode(back);
 
     m_front2back.insert({ &front, back });
     m_back2node.insert({ back.get(), snode });
@@ -46,7 +46,7 @@ void Evaluator::OnRemoveNode(const bp::Node& node)
     assert(itr_bn != m_back2node.end());
     m_back2node.erase(itr_bn);
 
-    m_eval.RemoveComponent(itr_fb->second);
+    m_eval.RemoveNode(itr_fb->second);
     m_front2back.erase(itr_fb);
 
     Update();
@@ -54,7 +54,7 @@ void Evaluator::OnRemoveNode(const bp::Node& node)
 
 void Evaluator::OnClearAllNodes()
 {
-    m_eval.ClearAllComponents();
+    m_eval.ClearAllNodes();
     m_front2back.clear();
     m_back2node.clear();
 
@@ -69,7 +69,7 @@ void Evaluator::OnNodePropChanged(const bp::NodePtr& node)
         return;
     }
 
-    TdAdapter::UpdatePropBackFromFront(*node, *itr->second, *this);
+    TdAdapter::UpdatePropBackFromFront(*node, *std::static_pointer_cast<td::Operator>(itr->second), *this);
 
     if (node->get_type().is_derived_from<Node>())
     {
@@ -169,7 +169,7 @@ void Evaluator::OnRebuildConnection()
 td::OpPtr Evaluator::QueryBackNode(const bp::Node& front_node) const
 {
     auto itr = m_front2back.find(&front_node);
-    return itr == m_front2back.end() ? nullptr : itr->second;
+    return itr == m_front2back.end() ? nullptr : std::static_pointer_cast<td::Operator>(itr->second);
 }
 
 n0::SceneNodePtr Evaluator::QuerySceneNode(const bp::Node& front_node) const

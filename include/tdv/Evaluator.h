@@ -5,8 +5,9 @@
 #include <ee0/typedef.h>
 #include <blueprint/typedef.h>
 
-#include <td/Evaluator.h>
+#include <dag/Graph.h>
 #include <td/typedef.h>
+#include <td/ParamType.h>
 #include <node0/typedef.h>
 
 #include <boost/noncopyable.hpp>
@@ -47,12 +48,12 @@ private:
     void Update();
 
 private:
-    td::Evaluator m_eval;
+    dag::Graph<td::ParamType> m_eval;
 
     PreviewBuilder m_preview_builder;
 
-    std::unordered_map<const bp::Node*, td::OpPtr> m_front2back;
-    std::unordered_map<const td::Operator*, n0::SceneNodePtr> m_back2node;
+    std::unordered_map<const bp::Node*, std::shared_ptr<dag::Node<td::ParamType>>> m_front2back;
+    std::unordered_map<const dag::Node<td::ParamType>*, n0::SceneNodePtr> m_back2node;
 
 }; // Evaluator
 

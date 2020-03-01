@@ -4,7 +4,6 @@
 #include <ee0/MessageID.h>
 #include <ee0/MsgHelper.h>
 
-#include <td/Evaluator.h>
 #include <td/ParamImpl.h>
 #include <td/operator/Line.h>
 #include <ns/NodeFactory.h>
@@ -15,8 +14,8 @@
 namespace tdv
 {
 
-PreviewBuilder::PreviewBuilder(const ee0::SubjectMgrPtr& sub_mgr, const td::Evaluator& eval,
-                               const std::unordered_map<const td::Operator*, n0::SceneNodePtr>& back2node)
+PreviewBuilder::PreviewBuilder(const ee0::SubjectMgrPtr& sub_mgr, const dag::Graph<td::ParamType>& eval,
+                               const std::unordered_map<const dag::Node<td::ParamType>*, n0::SceneNodePtr>& back2node)
     : m_sub_mgr(sub_mgr)
     , m_eval(eval)
     , m_back2node(back2node)
@@ -26,7 +25,7 @@ PreviewBuilder::PreviewBuilder(const ee0::SubjectMgrPtr& sub_mgr, const td::Eval
 void PreviewBuilder::Build()
 {
     m_sub_mgr->NotifyObservers(ee0::MSG_SCENE_NODE_CLEAR);
-    auto& ops = m_eval.GetAllOps();
+    auto& ops = m_eval.GetAllNodes();
     for (auto& pair : ops)
     {
         auto& op = pair.second;
@@ -38,7 +37,7 @@ void PreviewBuilder::Build()
         auto type = op->get_type();
         if (type == rttr::type::get<td::op::Line>())
         {
-            auto param = op->GetValue(0);
+            auto param = std::static_pointer_cast<td::Operator>(op)->GetValue(0);
             assert(param && param->Type() == td::ParamType::Geo);
             auto geo_param = std::static_pointer_cast<td::GeoParam>(param);
             auto& geo = geo_param->GetGeo();
