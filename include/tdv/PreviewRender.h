@@ -4,6 +4,7 @@
 #include <painting0/RenderContext.h>
 
 namespace n0 { class SceneNode; }
+namespace ur2 { class Device; class Context; }
 namespace pt3 { class Viewport; }
 
 namespace tdv
@@ -14,7 +15,8 @@ class PreviewRender
 public:
     PreviewRender(const pt3::Viewport& vp, const sm::mat4& cam_mat);
 
-    void DrawNode(const pt0::RenderContext& rc, const n0::SceneNode& node) const;
+    void DrawNode(const ur2::Device& dev, ur2::Context& ctx,
+        const pt0::RenderContext& rc, const n0::SceneNode& node) const;
 
     auto& GetPainter() const { return m_pt; }
 

@@ -15,14 +15,15 @@ PreviewRender::PreviewRender(const pt3::Viewport& vp,
 {
 }
 
-void PreviewRender::DrawNode(const pt0::RenderContext& rc, const n0::SceneNode& node) const
+void PreviewRender::DrawNode(const ur2::Device& dev, ur2::Context& ctx,
+                             const pt0::RenderContext& rc, const n0::SceneNode& node) const
 {
     pt3::RenderParams rp;
     rp.painter  = &m_pt;
     rp.viewport = &m_vp;
     rp.cam_mat  = &m_cam_mat;
 
-    n3::RenderSystem::Draw(node, rp, rc);
+    n3::RenderSystem::Draw(dev, ctx, node, rp, rc);
 }
 
 }

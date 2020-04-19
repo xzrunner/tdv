@@ -17,7 +17,8 @@ public:
     Node& operator = (const Node& node);
     virtual ~Node();
 
-    virtual void Draw(const n2::RenderParams& rp) const override;
+    virtual void Draw(const ur2::Device& dev, ur2::Context& ctx,
+        const n2::RenderParams& rp) const override;
 
     auto& GetName() const { return m_name; }
     void  SetName(const std::string& name) { m_name = name; }
