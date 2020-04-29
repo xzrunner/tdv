@@ -15,7 +15,7 @@ PreviewRender::PreviewRender(const pt3::Viewport& vp,
 {
 }
 
-void PreviewRender::DrawNode(const ur2::Device& dev, ur2::Context& ctx,
+void PreviewRender::DrawNode(const ur::Device& dev, ur::Context& ctx,
                              const pt0::RenderContext& rc, const n0::SceneNode& node) const
 {
     pt3::RenderParams rp;

@@ -10,7 +10,7 @@ class WxEditorPanel;
 class WxPreviewCanvas : public ee3::WxStageCanvas
 {
 public:
-    WxPreviewCanvas(const ur2::Device& dev, ee0::WxStagePage* stage,
+    WxPreviewCanvas(const ur::Device& dev, ee0::WxStagePage* stage,
         ECS_WORLD_PARAM const ee0::RenderContext& rc);
 
 protected:
