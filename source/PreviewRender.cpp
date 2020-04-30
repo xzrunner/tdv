@@ -1,6 +1,7 @@
 #include "tdv/PreviewRender.h"
 #include "tdv/Evaluator.h"
 
+#include <unirender/DrawState.h>
 #include <painting3/RenderSystem.h>
 #include <node0/SceneNode.h>
 #include <node3/RenderSystem.h>
@@ -23,7 +24,8 @@ void PreviewRender::DrawNode(const ur::Device& dev, ur::Context& ctx,
     rp.viewport = &m_vp;
     rp.cam_mat  = &m_cam_mat;
 
-    n3::RenderSystem::Draw(dev, ctx, node, rp, rc);
+    ur::DrawState ds;
+    n3::RenderSystem::Draw(dev, ctx, ds, node, rp, rc);
 }
 
 }
