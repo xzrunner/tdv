@@ -22,7 +22,7 @@ const uint32_t MESSAGES[] =
     ee0::MSG_SCENE_NODE_CLEAR,
 
     bp::MSG_BP_CONN_INSERT,
-    bp::MSG_BP_CONN_DELETE,
+    bp::MSG_BP_BEFORE_CONN_DELETE,
     bp::MSG_BP_CONN_REBUILD,
     bp::MSG_BP_NODE_PROP_CHANGED,
 };
@@ -76,7 +76,7 @@ void WxGraphPage::OnNotify(uint32_t msg, const ee0::VariantSet& variants)
     case bp::MSG_BP_CONN_INSERT:
         dirty = AfterInsertNodeConn(variants);
         break;
-    case bp::MSG_BP_CONN_DELETE:
+    case bp::MSG_BP_BEFORE_CONN_DELETE:
         dirty = BeforeDeleteNodeConn(variants);
         break;
     case bp::MSG_BP_CONN_REBUILD:
